@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    
+</head>
+
+<style>
+    body{
+        background-image: url("https://9series.com/blog/wp-content/uploads/2018/09/Employee-Attrition-and-Retention-Part-1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed; background-size: cover;
+        }
+</style>
+
+    
+
+     
+    <h1> Employee Attrition Placement Charges Prediction </h1>
+    <form method="POST" action="/predict_chrages">
+
+         
+
+        <label>Age:</label>
+        <input type = "text" name = "Age">
+        </select>
+
+        <br>
+        <br>
+        <label>Department:</label>
+        <select name = "Department">
+            <option value = "Research & Development">Research & Development</option>
+            <option value = "Sales">Sales</option>
+            <option value = "Human Resources">Human Resources</option>
+
+        </select>
+
+        <br>   
+        <br>
+        <label>DistanceFromHome:</label>
+        <input type = "text" name = "DistanceFromHome">
+        </select>
+
+        <br>
+        <br>
+        <label>Education:</label>
+        <input type = "text" name = "Education">
+        </select>
+
+        <br>
+        <br>
+
+        <label>	EducationField:</label>
+        <select name = "EducationField">
+            <option value = "Life Sciences">Life Sciences</option>
+            <option value = "Medical">Medical</option>
+            <option value = "Marketing">Marketing</option>
+            <option value = "Other">Other</option>
+            <option value = "Human Resources">Human Resources</option>
+
+        </select>
+
+        <br>
+        <br>
+        <label>EnvironmentSatisfaction:</label>
+        <input type = "text" name = "EnvironmentSatisfaction">
+        </select>
+
+        <br>
+     
+        <br>
+        
+        <label>JobSatisfaction:</label>
+        <input type = "text" name = "JobSatisfaction">
+        </select>
+
+        <br>
+        <br>
+
+        <label>MaritalStatus:</label>
+        <select name = "MaritalStatus">
+            <option value = "Married">Married</option>
+            <option value = "Single">Single</option>
+            <option value = "Divorced">Divorced</option>
+
+        </select>
+        <br>
+        <br>
+        <label>MonthlyIncome:</label>
+        <input type = "text" name = "MonthlyIncome">
+        </select>
+
+        <br>
+        <br>
+        <label>NumCompaniesWorked:</label>
+        <input type = "text" name = "NumCompaniesWorked">
+        </select>
+
+        <br>
+        <br>
+        <label>WorkLifeBalance:</label>
+        <input type = "text" name = "WorkLifeBalance">
+        </select>
+
+        <br>
+        <br>
+        <label>YearsAtCompany:</label>
+        <input type = "text" name = "YearsAtCompany">
+        </select>
+
+        <br>
+        <br>
+
+        
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>Your being : <b>{{prediction}}</b></p>
+
+
+    </form>
+
+   
+</body>
+</html>
