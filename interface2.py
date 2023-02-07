@@ -59,6 +59,6 @@ def predict_chrages():
         print(traceback.print_exc())
         return jsonify({"Message" : "Unsuccessful"}) 
 if __name__ == "__main__":
-    app.run(host = "0.0.0.0", port = config.Port_Number,debug=True)  
+    app.run(host = "0.0.0.0", port = config.Port_Number)  
 
                 
